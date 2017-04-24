@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Play/Pause</title>
+	<script src="https://use.fontawesome.com/cf42febda8.js"></script>
+</head>
+<body>
+	<h1>Reproduce tu música</h1>
+	<audio id="audio" src="assets/audio/Physical Education.mp3" preload="preload">
+	</audio>
+<div>
+	<progress value="10" max="80"></progress>
+</div>
+
+<div>
+  <button onclick="document.getElementById('audio').play()"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+  <button onclick="document.getElementById('audio').pause()"><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
+  <button onclick="document.getElementById('audio').rewind()"><i class="fa fa-backward" aria-hidden="true"></i></button>
+  <button onclick="document.getElementById('audio').forward()"><i class="fa fa-forward" aria-hidden="true"></i></button>
+  <button onclick="document.getElementById('audio').volume+=0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+  <button onclick="document.getElementById('audio').volume-=0.1"><i class="fa fa-volume-down" aria-hidden="true"></i></button>
+</div>
+
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
